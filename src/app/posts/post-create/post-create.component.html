@@ -1,0 +1,16 @@
+<h3>Enter Today's List :) </h3>
+
+<mat-card>
+    <mat-form-field>
+      <input matInput placeholder="enter title here.." type="text" [(ngModel)]="enteredTitle">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <textarea matInput placeholder="enter content here.." rows="2" [(ngModel)]="enteredContent"></textarea>
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="accent"
+      (click)="onAddPost()">Save Post</button>
+  </mat-card>
+  
